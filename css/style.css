@@ -3,7 +3,7 @@
 }
 
 #golova {
-	transition: all 5s;
+	transition: all 3s;
 }
 
 
@@ -15,6 +15,7 @@
 	top: 45%;
 	left: 15%;
 	margin-top: 5px;
+	border-radius: 10px; 
 }
 
 #butt {
@@ -31,7 +32,7 @@
 	float: left;
 	transition-property: margin, transform, border-radius;
 	transition-duration: 3s;
-	transition-delay: 5s;
+	transition-delay: 3s;
 }
 
 #butt:hover {

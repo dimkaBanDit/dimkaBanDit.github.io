@@ -8,14 +8,14 @@ function vverh() {
 	let elem = document.getElementById('golova');
 	elem.style.top = 0;
 	window.setTimeout(func, 3000);
-	window.setTimeout(span, 10000);
+	window.setTimeout(span, 9000);
 	this.removeEventListener('click', vverh);
 
 }
 
 function func() {
 	let elem = document.getElementById('butt');
-	elem.style.borderRadius = 0;
+	elem.style.borderRadius = "10px";
 }
 
 
