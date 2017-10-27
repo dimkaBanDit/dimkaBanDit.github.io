@@ -7,6 +7,8 @@ function vverh() {
 	
 	let elem = document.getElementById('golova');
 	elem.style.top = 0;
+	let elem1 = document.getElementById('footer');
+	elem1.style.top = "86%";
 	window.setTimeout(func, 2000);
 	window.setTimeout(span, 6000);
 	window.setTimeout(bok, 7000);
@@ -36,10 +38,10 @@ function bok() {
 	let di = document.createElement('div');
 	let di1 = document.createElement('div');
 	di.classList.add('animated');
-	di.classList.add('bounceInLeft');
+	di.classList.add('zoomInLeft');
 	di.classList.add('bok');
 	di1.classList.add('animated');
-	di1.classList.add('bounceInRight');
+	di1.classList.add('zoomInRight');
 	di1.classList.add('content');
 	parent.appendChild(di);
 	parent.appendChild(di1);

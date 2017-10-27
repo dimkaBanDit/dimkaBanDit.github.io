@@ -73,3 +73,17 @@
     border-radius: 10px;
     float: left;
 }
+
+#footer {
+	height: 100px;
+	width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 60%;
+    color: #7d7684;
+    transition: all 2s;
+}
+
+p {
+	text-align: center;
+}
