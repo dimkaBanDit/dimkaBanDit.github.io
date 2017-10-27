@@ -1,5 +1,12 @@
+@font-face {
+	font-family: BelleScript;
+	src: url(../fonts/BelleScript.otf);
+}
+
+
+
 * {
-	font-family: arial;
+	font-family: BelleScript;
 }
 
 #golova {
