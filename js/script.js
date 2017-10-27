@@ -9,6 +9,7 @@ function vverh() {
 	elem.style.top = 0;
 	window.setTimeout(func, 3000);
 	window.setTimeout(span, 10000);
+	this.removeEventListener('click', vverh);
 
 }
 
@@ -22,7 +23,7 @@ function func() {
 function span() {
 	var parent = document.getElementById('golova');
 	var span = document.createElement('span');
-	span.innerHTML = 'В Падике';
+	span.innerHTML = 'VPadike';
 	span.style.cssText = 'float: left; display: block; margin-top: 10px; margin-left: 10px; height: 80px; padding-left: 5px; border-left: 1px solid black; font-size: 70px; font-weight: lighter;';
 	span.classList.add('animated');
 	span.classList.add('bounceInRight');
