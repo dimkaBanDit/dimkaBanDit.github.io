@@ -7,9 +7,9 @@ function vverh() {
 	
 	let elem = document.getElementById('golova');
 	elem.style.top = 0;
-	window.setTimeout(func, 3000);
-	window.setTimeout(span, 9000);
-	window.setTimeout(bok, 10000);
+	window.setTimeout(func, 2000);
+	window.setTimeout(span, 6000);
+	window.setTimeout(bok, 7000);
 	this.removeEventListener('click', vverh);
 
 }

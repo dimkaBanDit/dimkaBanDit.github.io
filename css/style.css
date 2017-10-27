@@ -10,7 +10,7 @@
 }
 
 #golova {
-	transition: all 3s;
+	transition: all 2s;
 }
 
 
@@ -38,8 +38,8 @@
 	outline: none;
 	float: left;
 	transition-property: margin, transform, border-radius;
-	transition-duration: 3s;
-	transition-delay: 3s;
+	transition-duration: 2s;
+	transition-delay: 2s;
 }
 
 
