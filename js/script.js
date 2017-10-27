@@ -7,7 +7,6 @@ function vverh() {
 	
 	let elem = document.getElementById('golova');
 	elem.style.top = 0;
-	elem.style.left = "25%";
 	window.setTimeout(func, 3000);
 	window.setTimeout(span, 10000);
 	this.removeEventListener('click', vverh);
