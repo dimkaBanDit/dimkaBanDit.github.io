@@ -16,7 +16,7 @@
 
 .hol {
 	height: 100px;
-	width: 67.5%;
+	width: 1080px;
 	border: 2px solid black;
 	position: absolute;
 	top: 45%;
@@ -51,7 +51,7 @@
 }
 
 .bok {
-	width: 17.5%;
+	width: 280px;
 	height: 70%;
 	background-color: #ebebeb;
 	position: absolute;
@@ -62,7 +62,7 @@
 	float: left;
 }
 .content {
-    width: 50%;
+    width: 800px;
     height: 70%;
     background-color: #ebebeb;
     position: absolute;
