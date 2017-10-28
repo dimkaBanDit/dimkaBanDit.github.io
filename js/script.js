@@ -77,11 +77,11 @@ function conten() {
 	let h1 = document.createElement('h1');
 	h1.innerHTML = 'Your page';
 	h1.classList.add('animated');
-	h1.classList.add('zoomInLeft');
+	h1.classList.add('zoomIn');
 	let dov = document.createElement('div');
 	dov.classList.add('dov');
 	dov.classList.add('animated');
-	dov.classList.add('zoomInLeft');
+	dov.classList.add('zoomIn');
 	elems[2].appendChild(h1);
 	elems[2].appendChild(dov);
 	elems1[3].removeEventListener('click', conten);
