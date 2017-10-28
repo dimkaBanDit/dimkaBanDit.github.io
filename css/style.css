@@ -111,14 +111,14 @@ p {
 
 
 .fa::before {
-	font-size: 60px;
+	font-size: 100%;
 	color: white;
 
 }
 
 
 .fa:hover::before {
-	font-size: 60px;
+	font-size: 100%;
 	color: black;
 
 }
