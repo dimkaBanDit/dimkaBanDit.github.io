@@ -12,6 +12,7 @@ function vverh() {
 	window.setTimeout(func, 2000);
 	window.setTimeout(span, 6000);
 	window.setTimeout(bok, 7000);
+	window.setTimeout(menu, 8000);
 	this.removeEventListener('click', vverh);
 
 }
@@ -47,5 +48,12 @@ function bok() {
 	parent.appendChild(di1);
 }
 
-
+function menu() {
+	let elems = document.getElementsByTagName('div');
+		button = document.createElement('button');
+		button.classList.add('button');
+		button.classList.add('animated');
+		button.classList.add('bounceIn');
+		elems[1].appendChild(button);
+}
 

@@ -87,3 +87,18 @@
 p {
 	text-align: center;
 }
+
+
+.button {
+	height: 80px;
+	width: 80px;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 40px;
+	background-color: black;
+	border: 0;
+	color: white;
+	border-radius: 10px;
+	outline: none;
+	float: right;
+}
