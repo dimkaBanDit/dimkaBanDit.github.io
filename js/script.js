@@ -48,9 +48,10 @@ function bok() {
 	parent.appendChild(di);
 	parent.appendChild(di1);
 }
-
+	var elems = document.getElementsByTagName('div');
+	var elems1 = document.getElementsByTagName('button');
+	
 function menu() {
-	let elems = document.getElementsByTagName('div');
 		for (var i = 0; i < 8; i++) {
 		button = document.createElement('button');
 		button.classList.add('button');
@@ -58,18 +59,30 @@ function menu() {
 		button.classList.add('bounceIn');
 		elems[1].appendChild(button);
 		}
+		elems1[3].addEventListener('click', conten);
 }
 
 function menuic() {
-	let elems = document.getElementsByTagName('button');
-		 	elems[1].innerHTML = '<i class="fa fa-envelope" aria-hidden="true"></i>';
-		 	elems[2].innerHTML = '<i class="fa fa-camera-retro" aria-hidden="true"></i>';
-		 	elems[3].innerHTML = '<i class="fa fa-home" aria-hidden="true"></i>';
-		 	elems[4].innerHTML = '<i class="fa fa-comments" aria-hidden="true"></i>';	
-		 	elems[5].innerHTML = '<i class="fa fa-group" aria-hidden="true"></i>';
-		 	elems[6].innerHTML = '<i class="fa fa-newspaper-o" aria-hidden="true"></i>';
-		 	elems[7].innerHTML = '<i class="fa fa-film" aria-hidden="true"></i>';
-		 	elems[8].innerHTML = '<i class="fa fa-play-circle" aria-hidden="true"></i>';
+		 	elems1[1].innerHTML = '<i class="fa fa-envelope" aria-hidden="true"></i>';
+		 	elems1[2].innerHTML = '<i class="fa fa-camera-retro" aria-hidden="true"></i>';
+		 	elems1[3].innerHTML = '<i class="fa fa-home" aria-hidden="true"></i>';
+		 	elems1[4].innerHTML = '<i class="fa fa-comments" aria-hidden="true"></i>';	
+		 	elems1[5].innerHTML = '<i class="fa fa-group" aria-hidden="true"></i>';
+		 	elems1[6].innerHTML = '<i class="fa fa-newspaper-o" aria-hidden="true"></i>';
+		 	elems1[7].innerHTML = '<i class="fa fa-film" aria-hidden="true"></i>';
+		 	elems1[8].innerHTML = '<i class="fa fa-play-circle" aria-hidden="true"></i>';
 }
 
-
+function conten() {
+	let h1 = document.createElement('h1');
+	h1.innerHTML = 'Your page';
+	h1.classList.add('animated');
+	h1.classList.add('zoomInLeft');
+	let dov = document.createElement('div');
+	dov.classList.add('dov');
+	dov.classList.add('animated');
+	dov.classList.add('zoomInLeft');
+	elems[2].appendChild(h1);
+	elems[2].appendChild(dov);
+	elems1[3].removeEventListener('click', conten);
+}

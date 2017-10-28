@@ -122,3 +122,22 @@ p {
 	color: black;
 
 }
+
+h1 {
+	margin-left: 20px;
+	margin-top: 0px;
+	color: #3a3a3a;
+	font-size: 60px;
+}
+
+.dov {
+	height: 150px;
+	width: 95%;
+	margin-left: 20px;
+	margin-top: -30px;
+	background: url(../img/fon.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
