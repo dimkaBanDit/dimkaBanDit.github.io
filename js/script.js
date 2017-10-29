@@ -82,7 +82,24 @@ function conten() {
 	dov.classList.add('dov');
 	dov.classList.add('animated');
 	dov.classList.add('zoomIn');
+	let img = document.createElement('img');
+	img.src = 'img/photo.jpg';
+	img.classList.add('im');
+	let span = document.createElement('span');
+	span.classList.add('name');
+	span.classList.add('animated');
+	span.classList.add('bounceIn');
+	span.innerHTML = "Dimka BanDit"
+	let span1 = document.createElement('span');
+	span1.classList.add('name');
+	span1.classList.add('name1');
+	span1.classList.add('animated');
+	span1.classList.add('bounceIn');
+	span1.innerHTML = "Online Forever"
 	elems[2].appendChild(h1);
 	elems[2].appendChild(dov);
+	elems[3].appendChild(img);
+	elems[3].appendChild(span);
+	elems[3].appendChild(span1);
 	elems1[3].removeEventListener('click', conten);
 }
