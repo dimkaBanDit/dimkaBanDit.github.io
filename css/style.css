@@ -161,6 +161,7 @@ p{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 60px 1fr 1fr 1fr;
+	overflow: auto;
 }
 .header{
 	font-size: 50px;
@@ -188,4 +189,26 @@ p{
 .butmenu{
 	font-size: 45px;
 }
+}
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-right: 5px;
+}
+.item{
+	margin: 5px;
+}
+.container::-webkit-scrollbar{
+	width: 5px;
+}
+.container::-webkit-scrollbar-track {
+	width: 5px;
+	background: #e6e6e6;
+	border-radius: 5px;
+}
+.container::-webkit-scrollbar-thumb {
+	width: 5px;
+	border-radius: 5px;
+	background-color: grey;
 }

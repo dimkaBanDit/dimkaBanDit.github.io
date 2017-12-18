@@ -36,7 +36,9 @@ $(document).ready(function () {
 		$('.container').append('<div class="info"></div>');
 	};
 	function Photo(cl) {
-		$('.container').append('<span>'+cl+'</span>')
+		for (var i = 1; i < 11; i++) {
+			$('.container').append('<div class="item"><img src="img/'+i+'.jpg" alt="" /></div>');
+		};
 	};
 	function Messege(cl) {
 		$('.container').append('<span>'+cl+'</span>')
