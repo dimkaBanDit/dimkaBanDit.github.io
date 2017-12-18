@@ -175,3 +175,17 @@ p{
 	margin: 5px;
 	border-radius: 5px;
 }
+@media (min-width: 1900px) {
+.logo{
+	width: 131px;
+	height: 131px;
+	font-size: 90px;
+	}
+.logotip{
+	font-size: 105px;
+	height: 81%;
+	}
+.butmenu{
+	font-size: 45px;
+}
+}
