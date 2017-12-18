@@ -1,51 +1,53 @@
 $(document).ready(function () {
-$('.vp').click(function() {
-	$(this).hide();
-	$('.bor').animate({height: '400px', marginTop: '20%'}, 1000, function() {
-		$(this).append('<label class="lab lol">Username</label><input type="text" id="username" class="form-control" value""><br><label class="lab">Pssword</label><input type="password" id="password" class="form-control">')
-		$(this).append('<button class="log">LogIn</button>')
-		$('.log').click(function() {
-			var user = 'dimka';
-			var pss = 1488;
-			if ($('#username').val() == user && $('#password').val() == pss) {
-				$('.lab').hide();
-				$('#password').hide();
-				$('.log').hide();
-				$('#username').hide();
-				$('.bor').animate({height: '100px', marginTop: '30%'}, 1000, function() {
-					$('.vp').show(0, start);
+	// Start
+	$('.logo').click(function () {
+		$('.login').fadeIn(1000);
+	})
+	$('#sing').click(function () {
+		var user = ['dimka', $('#user').val()];
+		var pass = ['1488', $('#pass').val()];
+		if (user[0] == user[1] && pass[0] == pass[1]) {
+			$('.login').fadeOut(1000, function () {
+			$('.head').animate({top: '0%'}, function () {
+				$('.logo').attr('disabled', true).delay(1000).css({left: '0%', transform: 'rotate(-360deg)'}).animate({borderRadius: '10px'});
+				$('.sub').fadeIn(1000);
+				$('.footer').fadeIn(1000);
+				$('.logotip').delay(1000).fadeIn(1000);
 				});
-				
-			}
-		})
+			});
+		} else {
+			alert("Boy next door");
+		}
 	});
+	// Menu
+	$('.menu').on('click', '.butmenu', function () {
+		if ($('.butmenu') != $(this)) {
+			$('.butmenu').css({border: 'none', color: 'white', background: 'black'});
+		}
+		$(this).css({border: '1px solid black', color: 'black', background: 'white'});
+		create($(this).attr('data-select'));
+	});
+	function create(kek) {
+		$('.container').remove();
+		$('.cont').append('<div class="container"><span class="header">'+kek+'</span></div>');
+		if (kek == 'Home') { Home(kek); } if (kek == 'Photo') { Photo(kek); } if (kek == 'Messege') { Messege(kek); } if (kek == 'News') { News(kek); }if (kek == 'People') { People(kek); }if (kek == 'Video') { Video(kek); };
+	};
+	function Home(cl) {
+		$('.container').append('<div class="info"></div>')
+	};
+	function Photo(cl) {
+		$('.container').append('<span>'+cl+'</span>')
+	};
+	function Messege(cl) {
+		$('.container').append('<span>'+cl+'</span>')
+	};
+	function News(cl) {
+		$('.container').append('<span>'+cl+'</span>')
+	};
+	function People(cl) {
+		$('.container').append('<span>'+cl+'</span>')
+	};
+	function Video(cl) {
+		$('.container').append('<span>'+cl+'</span>')
+	};
 });
-function start() {
-	$('#head').after("<div id='he' class='container'></div>");
-	$('#he').append("<div id='he1' class='row justify-content-md-center'></div>");
-	$('#he').animate({height: '80vh'}, 1000);
-	$(this).attr('disabled', true);
-	$('.bor').animate({'margin-top': '5px'}, 1000, function() {
-		$('.vp').css({transform: "rotate(-360deg)",marginLeft: '-5px'}).animate({ borderRadius: '10px'}, 1000);
-		$('#he1').append("<div id='menu' class='col-lg-3 fon animated zoomInRight'></div>");
-		$('#he1').append('<div id="content" class="col-lg-7 fon animated zoomInLeft"><div class="contenter"><div class="msg"></div><div class="niz"><input type="text" id="ms"><button id="ent">Enter</button></div></div></div>');
-	});};
-
-		function selfRandom(min, max)
-		{
-  			return Math.floor(Math.random() * (max - min + 1)) + min;
-		};
-	$('body').on('click', '#ent', function () {
-		var msg = $('#ms').val();
-		var kek = ['Doroy','Privet','Hellow','Привет','Дратути','Дороу'];
-		$('.msg').append('<div class="row"><div class="mas"><p class="lol">'+msg+'</p></div></div>');
-		for (var i = 0; i < kek.length; i++) {
-		if (msg == kek[i]) {
-			$('.msg').append('<div class="row"><div class="mos"><p class="lol">'+kek[selfRandom(0,kek.length - 1)]+'</p></div></div>');
-			$('#ms').val('');
-		    }
-		}	
-	});	
-})
-
-

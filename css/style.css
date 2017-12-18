@@ -6,116 +6,172 @@
 	font-family: BelleScript;
 	outline: 0 !important;
 }
-.bor {
-	border: 1px solid black;
-	height: 100px;
-	border-radius: 10px;
-	margin-top: 30%;
+body {
+	margin: 0;
+	padding: 0;
 }
-.vp {
-	margin-left: 45%;
+.body{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.head{
+	grid-column: 2/7;
+	border: 1px solid black;
+	border-radius: 10px;
+	position: relative;
+	top: 43%;
+}
+.logo{
 	border: none;
 	border-radius: 50%;
-	height: 80px;
-	width: 80px;
-	margin-top: 10px;
-	background: black;
+	font-size: 50px;
 	color: white;
-	font-size: 40px;
+	background: black;
+	margin: 10px;
+	position: relative;
+	left: 43%;
+	padding: 15px;
+	width: 90px;
+	height: 90px;
+	display: block;
+	float: left;
 	transition: all 1s;
 }
-.vp:hover {
-	background: white;
-	color: black;
+.logo:hover{
 	border: 1px solid black;
+	color: black;
+	background: white;
 }
-.fon {
-	background: #e6e6e6;
-	height: 100%;
+.logotip{
+	display: none;
+	float: left;
+	text-align: left;
+	height: 71%;
+	border-left: 1px solid black;
+	font-size: 71px;
+	padding: 10px;
+	margin: 5px 0 5px 0;
+}
+.login{
+	display: none;
+	position: fixed;
+	border: 1px solid black;
 	border-radius: 10px;
-	margin-top: 5px;
-	margin-left: 1px;
+	width: 30%;
+	height: 60%;
+	left: 50%;
+	top: 50%;
+	margin: -15% 0 0 -17%;
+	z-index: 100;
+	background: white;
 }
-#he1{
+input{
+	display: block;
+	margin: 5px auto;
+	width: 50%;
+	height: 6%;
+	border-radius: 10px;
+	border: 1px solid black;
+	padding: 2px;
+	font-size: 20px;
+}
+span{
+	display: block;
+	width: 50%;
+	font-size: 25px;
+	margin: auto;
+	text-align: center;
+}
+#sing{
+	background: white;
+	margin: 20px auto;
+}
+.zag{
+	width: 75%;
+	font-size: 50px;
+	margin: 30px auto;
+	font-weight: bold;
+}
+.sub{
+	display: none;
+	grid-column: 2/7;
+	grid-row: 2/7;
+}
+.content{
+	width: 100%;
 	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	margin: 5px 0 5px 0;
+}
+.menu{
+	grid-row: 1/8;
+	border-radius: 10px;
+	background: #e6e6e6;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.cont{
+	grid-column: 2/5;
+	grid-row: 1/8;
+	border-radius: 10px;
+	background: #e6e6e6;
+	margin-left: 5px;
+}
+.footer{
+	display: none;
+	color: grey;
+	grid-column: 2/7;
+	grid-row: 7/8;
 }
 p{
 	text-align: center;
 }
-footer{
+.butmenu{
 	margin: 5px;
-	color: grey;
-}
-
-.lab {
-	font-size: 25px;
-}
-
-.lol {
-	margin-top: 70px;
-}
-.log{
-	margin-left: 45%;
 	border: none;
-	border-radius: 10px;
-	height: 80px;
-	width: 80px;
-	margin-top: 20px;
-	background: black;
 	color: white;
-	font-size: 40px;
+	border-radius: 10px;
+	background: black;
+	font-size: 30px;
+	transition: all 1s;
 }
-.log:hover {
-	background: white;
-	color: black;
+.butmenu:hover{
+	border-radius: 40%;
+}
+.row3{
+	grid-row: 3/4;
+	grid-column: 3/4;
+}
+.col3{
+	grid-column: 2/3;
+}
+.col2{
+	grid-column: 3/4;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 60px 1fr 1fr 1fr;
+}
+.header{
+	font-size: 50px;
+	display: block;
+	margin: 5px 0 5px 10px;
+	grid-column: 1/4;
+	text-align: left;
+}
+.info{
+	grid-column: 1/4;
 	border: 1px solid black;
-}
-.contenter{
-	width: 500px;
-	height: 505px;
-	border: 1px solid black;
-	margin: 10px;
-	border-radius: 10px;
-}
-.niz{
-	width: 100%;
-	height: 50px;
-	position: fixed;
-}
-.msg{
-	width: 100%;
-	height: 450px;
-	overflow: auto;
-}
-#ms{
-	margin: 10px;
-	width: 400px;
-	height: 30px;
-}
-#ent{
-	margin: 10px 10px 10px 0;
-	width: 60px;
-	height: 30px;
-}
-.row{
-	width: 100%;
-}
-.mas{
-	width: 50%;
-	border-radius: 10px;
-	background: #bff2f3;
 	margin: 5px;
-	padding: 5px;
-	float: left;
-}
-.lol{
-	word-wrap: break-word;
-}
-.mos{
-	width: 50%;
-	border-radius: 10px;
-	background: #e6e6e6;
-	margin: 5px;
-	padding: 5px;
-	float: right;
+	border-radius: 5px;
 }
