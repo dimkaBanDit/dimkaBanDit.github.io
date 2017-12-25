@@ -198,7 +198,7 @@ p{
 	font-size: 45px;
 }
 }
-.container > div > img {
+.kok {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -211,6 +211,9 @@ p{
 	border-radius: 50%;
 	transform: rotate(70deg);
 	margin: 5px;
+	width: 95%;
+    height: 95%;
+    object-fit: cover;
 }
 .inf{
 	color: white;
@@ -221,7 +224,7 @@ p{
 	margin: 5px;
 }
 .name{
-	font-size: 50px;
+	font-size: 40px;
 }
 .stena{
 	grid-column: 1/4;
@@ -261,4 +264,30 @@ p{
 }
 .sosi{
 	margin: 5px;
+}
+.avapip{
+	border-radius: 50%;
+	margin: 5px;
+	width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+.nes{
+	grid-column: 1/4;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 5px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+.loler{
+	text-decoration: none;
+	font-size: 30px;
+	color: black;
+	grid-column: 2/3;
+	text-align: center;
+	display: block;
+	margin-top: 20%;
+
 }

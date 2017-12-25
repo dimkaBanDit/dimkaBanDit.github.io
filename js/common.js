@@ -38,17 +38,22 @@ $(document).ready(function () {
 	};
 	function Photo(cl) {
 		for (var i = 1; i < 11; i++) {
-			$('.container').append('<div class="item"><img src="img/'+i+'.jpg" alt="" /></div>');
+			$('.container').append('<div class="item"><img class="kok" src="img/'+i+'.jpg" alt="" /></div>');
 		};
 	};
 	function Messege(cl) {
 		$('.container').append('<span>'+cl+'</span>')
 	};
 	function News(cl) {
-		$('.container').append('<span>'+cl+'</span>')
+		$('.container').append('<div class="nes"><a class="font loler" href="https://news.google.com/news/?ned=ru_ru&gl=RU&hl=ru">Google News</a></div>');
+		$('.container').append('<div class="nes"><a class="font loler" href="http://www.bbc.com/news">BBC News</a></div>');
+		$('.container').append('<div class="nes"><a class="font loler" href="http://time.com/">Time</a></div>');
 	};
 	function People(cl) {
-		$('.container').append('<span>'+cl+'</span>')
+		var poper = $('.container');
+		poper.append('<div class="info"><img class="avapip" src="img/temka.jpg" alt="" /><div class="inf"><span class="levo name">Temka Loh</span><span class="levo">Watch Naruto</span></div></div>');
+		poper.append('<div class="info"><img class="avapip" src="img/vitka.jpg" alt="" /><div class="inf"><span class="levo name">Vitan Pukan</span><span class="levo">Lifer</span></div></div>');
+		poper.append('<div class="info"><img class="avapip" src="img/max.jpg" alt="" /><div class="inf"><span class="levo name">Maxim Sasi</span><span class="levo">Maining achievements</span></div></div>');
 	};
 	function Video(cl) {
 		var poper = $('.container');
